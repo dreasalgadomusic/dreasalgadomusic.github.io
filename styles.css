@@ -1,0 +1,119 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('dreabackground.jpg') no-repeat 30% center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Main Container with frosted glass */
+.container {
+  max-width: 500px;
+  margin: 250px auto 20px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Profile */
+.profile {
+  padding: 40px 20px 30px;
+}
+
+.profile h1 {
+  font-family: 'Allura', cursive;
+  font-size: 3rem;
+}
+
+.profile p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Links */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.link-btn {
+  display: block;
+  background: rgba(255, 255, 255, 0.07);
+  color: white;
+  text-decoration: none;
+  padding: 18px 25px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.link-btn span {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+.link-btn:hover {
+  background: rgba(255, 65, 108, 0.8);
+  transform: scale(1.05);
+  color: white;
+}
+
+/* Bio Container */
+.bio-container {
+  max-width: 500px;
+  margin: 20px auto 40px auto;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center; /* center the text */
+  color: white;
+  font-family: Georgia, 'Times New Roman', serif; /* classy, elegant, readable */
+  font-size: 1.1rem;
+  line-height: 1.6; /* slightly more airy for readability */
+}
+
+/* Bio Text (set text here if desired) */
+.bio-text::after {
+  content: "Drea Salgado is a passionate musician with years of experience performing at weddings, private events, and live shows. She blends soulful melodies with engaging performances to create unforgettable experiences for her audience.";
+  display: block;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  font-size: 0.9rem;
+  opacity: 0.6;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile h1 { font-size: 2rem; }
+  .profile p { font-size: 1rem; }
+  .link-btn { font-size: 1rem; padding: 15px 20px; }
+  .bio-container { font-size: 1rem; padding: 15px; }
+}
